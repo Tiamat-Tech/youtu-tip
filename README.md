@@ -1,4 +1,4 @@
-<p align="center"><img src="youtu-tip/docs/assets/header.png" alt="Youtu Tip Header"></p>
+<p align="center"><a href="https://github.com/TencentCloudADP/youtu-tip/releases"><img src="youtu-tip/docs/assets/header.png" alt="Youtu Tip Header"></a></p>
 
 <p align="center">
 <a href="README_CN.md"><b>中文</b></a>
