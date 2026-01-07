@@ -20,8 +20,8 @@ Tip is powered by a series of self-developed lightweight models:
 
 You are also free to swap out the model for any alternative you prefer.
 
-Click the image below to view the demo:
-[![Tip Demo](https://tristanli-1252178374.cos.ap-shanghai.myqcloud.com/tip_github.jpg)](https://tristanli-1252178374.cos.ap-shanghai.myqcloud.com/tip-demo_v2.mp4)
+Click the image below to view the demo video:
+[![Tip Demo](youtu-tip/docs/assets/demo_video_cover.jpg)](https://tristanli-1252178374.cos.ap-shanghai.myqcloud.com/tip-demo_v2.mp4)
 
 
 ---
@@ -60,7 +60,7 @@ After downloading, grant the required permissions:
 
 ### Quick start
 
-Tip comes with Tip Cloud free credits by default, deployed on our platform endpoint. In “Settings - Models” you can add more models, including on-device offline models (Ollama) or OpenAI SDK-compatible endpoints (local or remote).
+In “Settings - Models” you can add models, including on-device offline models (Ollama) or OpenAI SDK-compatible endpoints (local or remote).
 
 Three quick ways to invoke Tip:
 - Press `ctrl + shift` to open the chat window and talk directly.
