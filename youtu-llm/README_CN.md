@@ -30,6 +30,17 @@ Youtu-LLM的主要贡献如下:
 - 💡 **原生智能体能力**：Youtu-LLM使用128K上下文进行原生训练，并辅以智能体中期训练（Agentic Mid-training），从而能够在端侧场景中实现更多轮次的交互。
 - ⚡ **SOTA 性能**：Youtu-LLM基于dense MLA架构，在轻量级LLM上实现了SOTA性能，超越了传统的dense GQA/MHA范式。MLA 架构也意味着Youtu-LLM可以轻松集成到现有的面向DSV3的生态系统中。
 
+## 🤗 模型下载
+| 模型名称  | 简介 | 下载链接 |
+| ----------- | ----------- |-----------
+| Youtu-LLM-2B-Base  | Youtu-LLM-2B Base模型 |🤗 [下载链接](https://huggingface.co/tencent/Youtu-LLM-2B-Base)|
+| Youtu-LLM-2B | Youtu-LLM-2B Instruct模型 | 🤗 [下载链接](https://huggingface.co/tencent/Youtu-LLM-2B)|
+| Youtu-LLM-2B-GGUF | Youtu-LLM-2B Instruct模型，GGUF格式 | 🤗 [下载链接](https://huggingface.co/tencent/Youtu-LLM-2B-GGUF)|
+
+## 📰 最新进展
+- [2026.01.07] 现在您可以基于[ModelScope](https://mp.weixin.qq.com/s/JJtQWSYEjnE7GnPkaJ7UNA)微调Youtu-LLM-2B。
+- [2026.01.04] 现在您可以基于[LlamaFactory](https://github.com/hiyouga/LlamaFactory/pull/9707)微调Youtu-LLM-2B。
+
 <a id="benchmarks"></a>
 
 ## 📊 性能对比
@@ -247,6 +258,14 @@ vllm serve <model_path> --trust-remote-code
 
 ```bash
 --enable-auto-tool-choice --tool-call-parser hermes
+```
+
+### 5. llama.cpp 部署
+
+对于macOS，可以通过下面的方法安装并使用Youtu-LLM:
+```bash
+brew install llama.cpp
+llama-server -hf tencent/Youtu-LLM-2B-GGUF:Q8_0 --host 0.0.0.0 --port 8081  --log-disable
 ```
 
 ## 📚 Citation
